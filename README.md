@@ -2,15 +2,17 @@
 
 #Overview
 
-They are programs for processing NIRS data.
+These are programs for processing NIRS data.
 
 #Discription
 
-AUC.R 
-is to calculate AUC.
+AucAf.R and AucPf.R
+These are to calculate AUC.
+AucAf.R is for aroma first data.
+AUCPf.R is for pain first data. 
 
 Wiltest.R 
-is to conduct paired Wilcoxon signed-rank test.
+This is to conduct paired Wilcoxon signed-rank test.
 
 Spr.R
-to calculate paired Spearman's rank correlation coefficient.
+This is to calculate paired Spearman's rank correlation coefficient.
