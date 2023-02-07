@@ -17,14 +17,14 @@ firProcessed2<-matrix(0,2710,22)
 firProcessed3<-matrix(0,2710,22)
 
 
-for(i in 3:24){
-  firProcessed1[,i-2] <- filtfilt(fir_filter,rawdata1[ ,i])
+for(i in 1:22){
+  firProcessed1[,i] <- filtfilt(fir_filter,rawdata1[ ,i+1])
 }
-for(i in 3:24){
-  firProcessed2[,i-2] <- filtfilt(fir_filter,rawdata2[ ,i])
+for(i in 1:22){
+  firProcessed2[,i] <- filtfilt(fir_filter,rawdata2[ ,i+1])
 }
-for(i in 3:24){
-  firProcessed3[,i-2] <- filtfilt(fir_filter,rawdata3[ ,i])
+for(i in 1:22){
+  firProcessed3[,i] <- filtfilt(fir_filter,rawdata3[ ,i+1])
 }
 
 
